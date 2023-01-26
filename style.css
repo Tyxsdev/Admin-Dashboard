@@ -147,5 +147,51 @@ aside {
 }
 
 main {
-    background-color: red;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.first-sec {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+section * {
+    margin: 0;
+}
+
+.container-one {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.cards {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem 1fr auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto);
+    grid-template-rows: 1fr;
+    gap: 2rem;
+}
+
+.first-icon {
+    grid-column: 2 / 3;
 }
