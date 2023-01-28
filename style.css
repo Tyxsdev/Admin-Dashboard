@@ -65,7 +65,6 @@ header {
 }
 
 .header-cont input:hover {
-    font-weight: bold;
     border: 3px solid #b09fcc;
     scale: 1;
 }
@@ -89,6 +88,10 @@ header {
     border: 1px solid #9c8aba;
     padding: 5px 15px;
     border-radius: 10px;
+}
+
+.user:hover {
+    color: white;
 }
 
 .header-cont-two {
